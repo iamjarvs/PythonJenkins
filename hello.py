@@ -1,2 +1,1 @@
-def hello():
-  retun 'Hello Everyone'
+print('Hello from docker')
