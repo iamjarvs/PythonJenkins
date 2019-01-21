@@ -9,7 +9,7 @@ pipeline {
         stage('Build'){
             steps {
                 sh 'docker build -t testtest .'
-                office365ConnectorSend message: "Docker container being built", status:"Built"
+                office365ConnectorSend message: "Hello world", webhookUrl: "${env.HOOK}"
             }
         }
         stage('Run'){
